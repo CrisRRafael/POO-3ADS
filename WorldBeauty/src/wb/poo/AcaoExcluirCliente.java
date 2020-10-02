@@ -1,34 +1,49 @@
 package wb.poo;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class AcaoExcluirCliente {
 	
 	Lojas unidade;
+	public List<Cliente> clientes = new ArrayList<>(); 
+	
 
 	public AcaoExcluirCliente(Lojas unidade) {
 		this.unidade = unidade;
+		clientes = unidade.clientes;
 	}
 	
-	public void excluirCliente() {
+	public void excluirCliente() { 
+		
+//		Iterator<Cliente> i = clientes.iterator();
+		
 		Controle controle = new Controle();
 		
 		System.out.println("Digite o Nome do cliente que deseja excluir: ");
 		String cliExcluir = controle.texto().toUpperCase();
 		
-		if (unidade.clientes.size() != 0) {
+//		while (i.hasNext()) {
+//            Cliente atual = i.next();
+//            if (atual.getNome().equals(cliExcluir)) {   
+//                i.remove();
+//                System.out.println("Cliente excluído");
+//                
+//            }
+//		}
 		
-		for (Cliente definicaoCliente : unidade.clientes) {
-			if (definicaoCliente.nome.equals(cliExcluir)) {
-				unidade.clientes.remove(definicaoCliente);
-				System.out.println(cliExcluir + " foi removido!");
+		for (Cliente astopho : clientes) {
+			if (astopho.getNome().equals(cliExcluir)) {   
+               clientes.remove(astopho);
+               System.out.println("Cliente excluido");
+               break;
+			}
+		}
 		
-	}else {
-		System.out.println("Cliente n�o cadastrado");
+		
+		System.out.println("Rodou até aqui");
+
 	}
 
-}
-}else {
-	System.out.println("Sem cadastros de cliente");
-}
-}
-	
 }

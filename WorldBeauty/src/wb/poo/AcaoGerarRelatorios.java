@@ -71,7 +71,7 @@ public class AcaoGerarRelatorios {
 											for(i = 0; i < u.agenda.size(); i++) {
 												c = u.agenda.get(i);
 												lista2.addAll(c.servicosCli);*/
-						List<String> myList = new ArrayList<String>();
+						List<String> myList = new ArrayList<String>(); // só pra lembrar: incrementar valores no MAPA
 				          /*	{
 				        		add("Manicure");
 				        		add("Pedicure");

@@ -3,13 +3,14 @@ package wb.poo;
 public class Menu {
 	public static void menuPrincipal() {
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-		System.out.println("  Digite a opção desejada");
+		System.out.println("  Digite a opÃ§Ãµes desejada");
 		System.out.println(" 1. Cadastrar cliente ");
 		System.out.println(" 2. Editar cadastro do cliente");
 		System.out.println(" 3. Excluir cadastro do cliente");
 		System.out.println(" 4. Listar clientes");
-		System.out.println(" 5. Cadastrar serviço");
-		System.out.println(" 6. Relatórios");
+		System.out.println(" 5. Cadastrar serviÃ§o");
+		System.out.println(" 6. RelatÃ³rios");
+		System.out.println(" 7. Serializar");
 		System.out.println(" 0. Para sair");
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 	}
@@ -25,39 +26,39 @@ public class Menu {
 
 	public static void menuEditar() {
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%");
-		System.out.println("Digite a opção desejada");
+		System.out.println("Digite a opï¿½ï¿½o desejada");
 		System.out.println("1. Alterar nome do cliente");
 		System.out.println("2. Alterar telefone do cliente");
 		System.out.println("3. Alterar Data de Nascimento do cliente");
-		System.out.println("4. Alterar genêro do cliente");
+		System.out.println("4. Alterar genï¿½ro do cliente");
 		System.out.println("0. Voltar ao menu principal");
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 	}
 	
 	public static void menuListar() {
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-		System.out.println("  Digite a opção desejada");
+		System.out.println("  Digite a opï¿½ï¿½o desejada");
 		System.out.println(" 1. Listar todos os  cliente. ");
-		System.out.println(" 2. Listar clientes por genêro(F/M).");
-		System.out.println(" 3. Listar serviços de um determinado cliente.");
+		System.out.println(" 2. Listar clientes por genï¿½ro(F/M).");
+		System.out.println(" 3. Listar serviï¿½os de um determinado cliente.");
 		System.out.println(" 0. Voltar ao Menu Principal.");
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 	}
 	
 	
-	public static void menuServiços() {
+	public static void menuServicos() {
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-		System.out.println("  Digite a opção do serviço desejado");
+		System.out.println("  Digite a opï¿½ï¿½o do serviï¿½o desejado");
 		System.out.println(" 1. Manicure . ");
 		System.out.println(" 2. Pedicure.");
 		System.out.println(" 3. Design de sombrancelhas.");
 		System.out.println(" 4. Corte de cabelo Feminino.");
 		System.out.println(" 5. Tintura.");
-		System.out.println(" 6. Remoção de rugas.");
-		System.out.println(" 7. Remoção de manchas de pele.");
-		System.out.println(" 8. Aplicação de botox.");
+		System.out.println(" 6. Remoï¿½ï¿½o de rugas.");
+		System.out.println(" 7. Remoï¿½ï¿½o de manchas de pele.");
+		System.out.println(" 8. Aplicaï¿½ï¿½o de botox.");
 		System.out.println(" 9. Tratamento de Emagrecimento .");
-		System.out.println(" 10. Redução de medidas.");
+		System.out.println(" 10. Reduï¿½ï¿½o de medidas.");
 		System.out.println(" 11. Corte de cabelo Masculino.");
 		System.out.println(" 12. Modelagem/corte de barba.");
 		System.out.println(" 13. Tratamento para queda de cabelo.");
@@ -68,11 +69,11 @@ public class Menu {
 	
 	public static void menuRelatorios() {
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-		System.out.println("  Digite a opção de relatorio desejado");
-		System.out.println(" 1. Idade média de todo o público");
-		System.out.println(" 2. Idade média do público por gênero.");
-		System.out.println(" 3. Serviço mais procurado para todo o público.");
-		System.out.println(" 4. Serviço mais procurado por genêro.");
+		System.out.println("  Digite a opï¿½ï¿½o de relatorio desejado");
+		System.out.println(" 1. Idade mï¿½dia de todo o pï¿½blico");
+		System.out.println(" 2. Idade mï¿½dia do pï¿½blico por gï¿½nero.");
+		System.out.println(" 3. Serviï¿½o mais procurado para todo o pï¿½blico.");
+		System.out.println(" 4. Serviï¿½o mais procurado por genï¿½ro.");
 		System.out.println(" 0. Voltar Menu Principal. ");
 		System.out.println("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 	}

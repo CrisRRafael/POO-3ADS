@@ -1,11 +1,10 @@
 package wb.poo;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("serial")
-public class Lojas implements Serializable {
+
+public class Lojas {
 	
 	public int codigoDaLoja;
 	public String nomeDaLoja;	

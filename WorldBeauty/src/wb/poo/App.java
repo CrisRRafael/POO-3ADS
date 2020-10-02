@@ -1,9 +1,11 @@
 package wb.poo;
 
+import java.io.IOException;
+
 public class App {
 
 	@SuppressWarnings("unused")
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		Lojas unidade = null;
 		
@@ -27,7 +29,7 @@ public class App {
 			System.out.println("%%%%%%% Filial %%%%%%%");
 			unidade = filial;
 		}else {
-			System.out.println("Unidade informada não cadastrada");
+			System.out.println("Unidade informada nï¿½o cadastrada");
 		}
 		
 		
@@ -50,7 +52,7 @@ public class App {
 				break;
 				
 			case 3:
-				AcaoExcluirCliente excluir =new AcaoExcluirCliente(unidade);
+				AcaoExcluirCliente excluir = new AcaoExcluirCliente(unidade);
 				excluir.excluirCliente();
 				break;
 			
@@ -68,9 +70,17 @@ public class App {
 				AcaoGerarRelatorios relatorio = new AcaoGerarRelatorios(unidade);
 				relatorio.GerarRelatorios();
 			break;
+			
+			case 7:
+				AcaoSerializar serie = new AcaoSerializar();
+				serie.save();
+			break;
+			
+			
 			}
-				
-				
+			
+			
+			
 				
 		}while(escolha!=0);
 }
