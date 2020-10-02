@@ -39,13 +39,13 @@ public class AcaoGerarRelatorios {
 							int idade = AcaoCalcularIdade.calcIdade(cliente.dataDeNascimento);
 							totalIdades += idade;	}
 						int mediaIdades = totalIdades/(unidade.clientes.size());
-						System.out.println("A idade média dos clientes é de :" + mediaIdades+" anos.");
+						System.out.println("A idade mÃ©dia dos clientes Ã© de :" + mediaIdades+" anos.");
 					break;
 			
 					case 2:
 						int contadorClientes= 0;
 						String definicaoGenero = "";
-						System.out.println("Digite o gênero (F/M): ");
+						System.out.println("Digite o gÃªnero (F/M): ");
 						definicaoGenero = controle.texto().toLowerCase();
 						int idadeGenero= 0;
 						for(int i = 0; i < unidade.clientes.size(); i++) {
@@ -56,10 +56,10 @@ public class AcaoGerarRelatorios {
 								contadorClientes++;}
 							if(contadorClientes != 0) {
 								int total =idadeGenero / (unidade.clientes.size());
-								System.out.println("A média de Idade para o genêro"+ definicaoGenero+ " é de :"+ total+ "anos");
+								System.out.println("A mÃ©dia de Idade para o genÃªro"+ definicaoGenero+ " Ã© de :"+ total+ "anos");
 								}
 							else {
-								System.out.println("Não possuem clientes do genêro."+definicaoGenero +"Cadastrados");
+								System.out.println("NÃ£o possuem clientes do genÃªro."+definicaoGenero +"Cadastrados");
 								
 							}
 						}
@@ -78,17 +78,17 @@ public class AcaoGerarRelatorios {
 				        		add("Design de sombrancelhas");
 				        		add("Corte de cabelo Feminino");
 				        		add("Tintura");
-				        		add("Remoção de rugas");
+				        		add("RemoÃ§Ã£o de rugas");
 				        		add("Manicure");
-				        		add("Aplicação de botox.");
+				        		add("AplicaÃ§Ã£o de botox.");
 				        		add("Tratamento de Emagrecimento");
-				        		add("Redução de medidas");
+				        		add("ReduÃ§Ã£o de medidas");
 				        		add("Corte de cabelo Masculino");
 				        		add("Manicure");
 				        		add("Tintura");
 				            }
 
-				};*/
+				};
 					if(unidade.clientes.size() !=0) {
 						for(int i =0; i < unidade.clientes.size();i++) {
 							cliente = unidade.clientes.get(i);
@@ -104,7 +104,7 @@ public class AcaoGerarRelatorios {
 				        System.out.println(a + ": " + Collections.frequency(myList,a)); 
 				    }
 						}
-					}
+					}*/
 						
 						break;
 			
@@ -116,7 +116,7 @@ public class AcaoGerarRelatorios {
 			}
 				}
 				else{
-					System.out.println("Não há clientes cadastrados");
+					System.out.println("NÃ£o hÃ¡ clientes cadastrados");
 					
 				}
 			}while(opcao!=0);
